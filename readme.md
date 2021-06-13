@@ -14,13 +14,13 @@ cp .env.example .env
 
 # Fill in the .env file
 
-composer install
+composer install (if missing: apt install composer php7.3 php-xml)
 
 php artisan key:generate
 
-artisan migrate:fresh
+artisan migrate:fresh (if missing: apt install php7.3-mysql)
  
-npm install && npm run dev
+npm install && npm run dev (if missing: apt install npm)
 ```
 
 ## Contributing
